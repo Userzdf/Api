@@ -41,4 +41,9 @@ public class JwtUtils {
         System.out.println(body.getSubject());
         System.out.println(body.getExpiration());
     }
+
+
+    public static void main(String[] args){
+        System.out.println("hello world");
+    }
 }
