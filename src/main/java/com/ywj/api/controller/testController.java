@@ -16,7 +16,9 @@ public class testController {
     public Map<String, ArrayList> test(UserInfo userInfo){
         Map<String,ArrayList> map = new HashMap();
         userInfo.setUserName("lisa");
-        userInfo.setPassWord(String.valueOf(UUID.randomUUID()));
+        String uuid = String.valueOf(UUID.randomUUID());
+        System.out.println(uuid);
+        userInfo.setPassWord(uuid);
         userInfo.setEmail("1443637646@qq.com");
         userInfo.setPhone("150**********");
         userInfo.setAddress("北京市朝阳区");
