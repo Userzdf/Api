@@ -10,7 +10,7 @@ import java.util.Map;
 import java.util.UUID;
 
 @Controller
-public class testController {
+public class TestController {
     @GetMapping("/test")
     @ResponseBody
     public Map<String, ArrayList> test(UserInfo userInfo){
@@ -26,5 +26,12 @@ public class testController {
         array.add(userInfo);
         map.put("userInfo", array);
         return map;
+    }
+
+
+    public void type(){
+        if(test(new UserInfo()) instanceof Map){
+            System.out.println("true");
+        }
     }
 }
